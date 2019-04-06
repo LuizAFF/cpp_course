@@ -1,0 +1,7 @@
+#Do not track these
+
+
+#Compiled source or commentaries on exercises done during classes
+exercise_??
+*.s
+*commentary
