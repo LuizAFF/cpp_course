@@ -13,7 +13,7 @@ public: //tudo o que está em public pode ser visto quando se chama o tipo
 	Vector2D() = default; //construtor padrão Vector2D() é um construtor que não exige argumentos
 	//o construtor igualado a default significa que há uma associação das variáveis aos valores padrão
 	//selecionados depois
-	Vector2D(const Vector2D &) = default; //cria uma cópia e inicia com os mesmos valores
+	Vector2D(const Vector2D&) = default; //cria uma cópia e inicia com os mesmos valores
 	//, ou seja, simplesmente gera outro vetor com valores x = 0 e y = 0, que
 	//foram os valores setados como default
 
@@ -24,16 +24,16 @@ public: //tudo o que está em public pode ser visto quando se chama o tipo
 
     //os seguintes métodos alteram o estado do objeto, por isso não se igualm a const
     Vector2D& invert(); 
-    Vector2D& multiply(double);
-    Vector2D& sum(const Vector2D &);
+    Vector2D& operator *=(double);
+    Vector2D& operator +=(const Vector2D&);
 
 private:
     double x_{0}, y_{0}; //os valores nos parenteses são os inicializadores dos membros
 };
 
 Vector2D inverted(Vector2D);
-Vector2D sum(Vector2D, const Vector2D &);
-Vector2D multiply(Vector2D, double);
+Vector2D operator +(Vector2D, const Vector2D&);
+Vector2D operator *(Vector2D, double);
 
 }
 

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lviz/Documents/cpp_course_caravela/aula_04/example-project/functions.h
+vector
+-
+student.h
+/home/lviz/Documents/cpp_course_caravela/aula_04/example-project/student.h
+
+/home/lviz/Documents/cpp_course_caravela/aula_04/example-project/main.cpp
+iostream
+-
+string
+-
+vector
+-
+student.h
+/home/lviz/Documents/cpp_course_caravela/aula_04/example-project/student.h
+functions.h
+/home/lviz/Documents/cpp_course_caravela/aula_04/example-project/functions.h
+
+/home/lviz/Documents/cpp_course_caravela/aula_04/example-project/student.h
+string
+-
+

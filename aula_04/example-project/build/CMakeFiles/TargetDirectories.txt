@@ -1,0 +1,4 @@
+/home/lviz/Documents/cpp_course_caravela/aula_04/example-project/build/CMakeFiles/rebuild_cache.dir
+/home/lviz/Documents/cpp_course_caravela/aula_04/example-project/build/CMakeFiles/school.dir
+/home/lviz/Documents/cpp_course_caravela/aula_04/example-project/build/CMakeFiles/edit_cache.dir
+/home/lviz/Documents/cpp_course_caravela/aula_04/example-project/build/CMakeFiles/main.dir

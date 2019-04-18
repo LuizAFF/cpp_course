@@ -26,14 +26,14 @@ Vector2D& Vector2D::invert()
 	return *this; //é um ponteiro que serve para encadear métodos
 }
 
-Vector2D& Vector2D::multiply(double scalar)
+Vector2D& Vector2D::operator *=(double scalar)
 {
 	x_ *= scalar;
 
 	return *this;
 }
 
-Vector2D& Vector2D::sum(const Vector2D& other)
+Vector2D& Vector2D::operator +=(const Vector2D& other)
 {
 	x_ += other.x_;
 	y_ += other.y_;
@@ -46,14 +46,14 @@ Vector2D inverted(Vector2D v)
 	return v.invert();
 }
 
-Vector2D sum(Vector2D v, const Vector2D& w)
+Vector2D operator +(Vector2D v, const Vector2D& w)
 {
-	return v.sum(w);
+	return v += w;
 }
 
-Vector2D multiply(Vector2D lhs, double rhs)
+Vector2D operator *(Vector2D lhs, double rhs)
 {
-	return lhs.multiply(rhs);
+	return lhs *= rhs;
 }
 
 }

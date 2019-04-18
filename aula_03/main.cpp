@@ -14,7 +14,7 @@ int main()
 
     print_vector(v);
 
-    v.sum({7, 8});
+    v += {7, 8};
 
     print_vector(v);
 
@@ -27,16 +27,16 @@ int main()
 
     print_vector(v);
 
-    v.multiply(0.5);
+    v*=(0.5);
 
     print_vector(v);
 
-    auto w = sum(v, {7, 8});
+    auto w = v + Vector2D{7, 8};
 
     print_vector(v);
     print_vector(w);
 
-    auto u = multiply(v, 0.5);
+    auto u = v * 0.5;
 
     print_vector(v);
     print_vector(u);
